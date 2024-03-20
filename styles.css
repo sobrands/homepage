@@ -1,0 +1,46 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-body {
+  width: 100vw;
+}
+
+header {
+  background-image: linear-gradient(176deg, rgb(50,161,202) 65%, white calc(65% + 2px));
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me {
+  width: 500px;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 2px 1px 10px rgb(131, 131, 131);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-me-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.about-me-content {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.about-me-socials {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
