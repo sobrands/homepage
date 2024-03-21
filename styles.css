@@ -52,6 +52,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: justify;
 }
 
 .about-me-title {
@@ -206,4 +207,118 @@ footer > img {
   object-fit: cover;
   height: 350px;
   width: 450px;
+}
+
+/* Responsiveness to different screen sizes */
+@media (max-width: 900px) {
+  /* About Me */
+  .about-me-img {
+    transform: translate(10%, 0);
+    position: relative;
+    z-index: 2;
+    float: left;
+  }
+
+  .about-me-img img {
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+  }
+
+  .about-me {
+    transform: translate(5%, 10%);
+  }
+
+  .about-me-socials {
+    display: none;
+  }
+
+  /* Projects */
+  .projects-title {
+    margin-left: 2rem;
+  }
+
+  .project-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact Me */
+  footer {
+    gap: 2rem;
+  }
+
+  footer > img {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 450px) {
+  /* About Me */
+  header {
+    flex-direction: column;
+  }
+
+  .about-me-img {
+    transform: none;
+  }
+
+  .about-me-img img {
+    transform: none;
+    border-radius: 0;
+    height: 480px;
+  }
+
+  .about-me {
+    transform: none;
+    width: 100%;
+    box-shadow: none;
+    background: none;
+    align-items: center;
+  }
+
+  .about-me-socials {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Projects */
+  .projects {
+    align-items: center;
+  }
+
+  .projects-title {
+    margin: 3rem 0 1rem;
+    font-size: 2.4rem;
+  }
+
+  .project-cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact */
+  footer {
+    flex-direction: column;
+    padding: 2rem 0 0;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+
+  .contact-info h1 {
+    align-self: center;
+  }
+
+  .contact-socials {
+    align-self: center;
+  }
+
+  footer > img {
+    width: 100%;
+    height: 300px;
+  }
 }
